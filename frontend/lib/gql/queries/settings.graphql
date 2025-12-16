@@ -1,7 +1,0 @@
-query settings($key: [String!]) {
-  settings(key: $key) {
-    key
-    value
-    type
-  }
-}

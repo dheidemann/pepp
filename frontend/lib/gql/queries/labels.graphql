@@ -1,8 +1,0 @@
-query labels($kind: [LabelKind!]) {
-  labels(kind: $kind) {
-    ID
-    name
-    color
-    kind
-  }
-}

@@ -1,3 +1,0 @@
-mutation upsertSetting($setting: NewSetting!) {
-  upsertSetting(setting: $setting)
-}

@@ -1,7 +1,0 @@
-mutation addStudentRegistrationForTutorial($registration: UserToTutorialRegistration!) {
-  addStudentRegistrationForTutorial(registration: $registration)
-}
-
-mutation deleteStudentRegistrationForTutorial($registration: UserToTutorialRegistration!) {
-  deleteStudentRegistrationForTutorial(registration: $registration)
-}

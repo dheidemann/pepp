@@ -1,9 +1,0 @@
-mutation addStudentApplicationForEvent($application:NewUserToEventApplication!) {
-  addStudentApplicationForEvent(application: $application) {
-    fn
-  }
-}
-
-mutation acceptNewApplications($eventID: Int!, $count: Int!) {
-  acceptTopApplicationsOnEvent(eventID: $eventID, count: $count)
-}

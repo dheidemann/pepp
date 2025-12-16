@@ -1,0 +1,25 @@
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { useInitials } from "@/hooks/use-initials";
+
+export function UserInfo({ showEmail = false }: { showEmail?: boolean }) {
+  const getInitials = useInitials();
+
+  return (
+    <>
+      <Avatar className="h-8 w-8 overflow-hidden rounded-full">
+        <AvatarImage />
+        <AvatarFallback className="rounded-lg bg-neutral-200 text-black dark:bg-neutral-700 dark:text-white">
+          {getInitials("Fischkopf Lol")}
+        </AvatarFallback>
+      </Avatar>
+      <div className="grid flex-1 text-left text-sm leading-tight">
+        <span className="truncate font-medium">{"Fischkopf Lol"}</span>
+        {showEmail && (
+          <span className="truncate text-xs text-muted-foreground">
+            {"t@t.de"}
+          </span>
+        )}
+      </div>
+    </>
+  );
+}
